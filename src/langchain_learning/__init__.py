@@ -1,10 +1,9 @@
-from dotenv import load_dotenv
-import os
-from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain_ollama import ChatOllama
+from dotenv import load_dotenv
 
 load_dotenv()
+
 
 def main() -> None:
     print("Hello from langchain-learning!")
