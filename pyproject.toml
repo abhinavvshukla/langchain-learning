@@ -1,0 +1,26 @@
+[project]
+name = "langchain-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abhinavvshukla", email = "abhinavshuklacse04@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "chatollama>=0.2.13",
+    "langchain>=1.4.6",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.7.2",
+    "langchain-tavily>=0.2.18",
+    "langsmith>=0.14.11",
+    "python-dotenv>=1.2.4",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+langchain-learning = "langchain_learning:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
